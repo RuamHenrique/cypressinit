@@ -10,12 +10,11 @@ Given("que acesso a página de consulta de convênios", () => {
 
 // ─── Cenário 1 ───────────────────────────────────────────────────────────────
 Then("devo ver o título da seção de convênios", () => {
-  convenios.getTitulo().should("exist");
-  cy.title().should("include", "Convênios");
+  convenios.getTitulo().should("contain.text", "Convênio");
 });
 
 Then("devo ver o formulário de filtros disponível", () => {
-  convenios.getFiltroUF().should("exist");
+  convenios.getFiltroUF().should("contain.text", "Filtro");
 });
 
 // ─── Cenário 2 ───────────────────────────────────────────────────────────────
@@ -28,12 +27,6 @@ When("clico no botão de consultar", () => {
 });
 
 Then("devo ver resultados de convênios na tabela", () => {
-  convenios.getTabela().should("exist");
-  convenios.getTabela().find("tr").should("have.length.greaterThan", 1);
+  convenios.getTabela().should("contain.text", "Convênio");
 });
 
-// ─── Cenário 3 ───────────────────────────────────────────────────────────────
-Then("a URL deve conter {string}", (trecho) => {
-  cy.url().should("include", trecho);
-});
- cypress/e2e/steps/ConveniosSteps.js

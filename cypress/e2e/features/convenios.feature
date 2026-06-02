@@ -32,4 +32,3 @@ Funcionalidade: Consulta de Convênios e Parcerias no Portal da Transparência
       | RJ |
       | MG |
       | PB |
-cypress/e2e/features/convenios.feature

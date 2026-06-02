@@ -33,6 +33,3 @@ Then("devo ver opções de consulta disponíveis", () => {
   despesas.getBody().should("contain.text", "Consulta");
 });
 
-Then("a URL deve conter {string}", (fragmento) => {
-  cy.url().should("include", fragmento);
-});
