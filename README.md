@@ -57,3 +57,14 @@ npx cypress open
 
 Projeto acadêmico de automação de testes com Cypress + BDD# Projeto Cypress
 
+Grupo
+
+Ruam Henrique Ramos
+Carlos Felipe de Azevedo
+Gabriel Albanez Souza
+Gustavo Soares Carvalho
+
+
+## 📎 Material de apoio
+
+🔗 https://drive.google.com/file/d/1DdhBuQgb87rjnltVOiN_bQ-Qj93t-oVy/view
